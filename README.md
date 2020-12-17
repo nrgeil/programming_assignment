@@ -10,7 +10,8 @@ found.
 ## Requirements
 
 - The file with the set of words to exclude is expected to have one word per line.
-- Python >=3.6
+- Python >=3.6. This was developed and tested on 3.8.5, but should work on 3.6 and later. CI job set up to test all
+three versions.
 
 ## Development Requirements
 
