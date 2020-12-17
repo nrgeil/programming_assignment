@@ -5,12 +5,12 @@ description = ""
 authors = ["Nicholas Geil <nrgeil@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8.5"
+python = ">=3.6"
 click = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
 black = "^20.8b1"
-ipython = "^7.19.0"
+ipython = "*"
 pytest-cov = "^2.10.1"
 pytest = "^6.2.1"
 
