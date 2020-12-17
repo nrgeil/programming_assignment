@@ -60,6 +60,23 @@ parse_file -i $(pwd)/Text1.txt -r $(pwd)/stopwords.txt
 - Non-alphabetical means anything not covered by the regex pattern '[A-Za-z]'
 - Apply stemmer algorithm using Porter Stemmer means use the code provided in the language of choice
 
+## Comparing Counter most_common method vs my implementation
+
+To verify my implementation of finding the top used stem words is comparable to the method available in Collections,
+I used the bash command `time`. 
+
+```shell
+# Using my implementation
+time parse_file -i $(pwd)/Text2.txt -r $(pwd)/stopwords.txt
+1.62s user 0.18s system 99% cpu 1.809 total
+```
+
+```shell
+# Using Counter.most_common
+time parse_file -i $(pwd)/Text2.txt -r $(pwd)/stopwords.txt -c
+1.68s user 0.16s system 99% cpu 1.843 total
+```
+
 ## Results
 
 ### Text1.txt

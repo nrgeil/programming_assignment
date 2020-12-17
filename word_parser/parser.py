@@ -49,6 +49,9 @@ class Parser:
         python documentation for OrderedDict in collections, I came across the Counter class and used that instead.
         Implementing my own "most_common" method in case that is desired.
 
+        Iterates over root words found in the parsed file and pulls out the top "n" words sorted by frequency and
+        alphabetical order.
+
         :param n: Number of words to return
         :return: List of tuples of the "n" most common words and how often they appeared.
         """
