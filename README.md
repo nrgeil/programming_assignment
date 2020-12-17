@@ -138,3 +138,12 @@ poetry install
 # Building the package
 poetry build
 ```
+
+### Test Coverage
+
+```
+----------- coverage: platform linux, python 3.8.5-final-0 -----------
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+word_parser/parser.py      73      5    93%
+```
